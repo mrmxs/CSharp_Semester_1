@@ -1,5 +1,3 @@
 original master branch text
 
-additional text after creating a new branch
-
-second branch was here and also add some new text
+second branch was here
