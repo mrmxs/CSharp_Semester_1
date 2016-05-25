@@ -47,24 +47,56 @@ namespace Lab2
             return "function not exist";
         }
 
+        enum music_ganre {
+            blues, classic, dance,
+            disco, electronic,
+            grunge, hip_hop, indie,
+            industrial, jazz, metal,
+            new_age, pop, punk,
+            r_n_b, rap, reggae,
+            rock, soul, soundtrack,
+            techno}
+
+        struct rectangle
+        {
+            //s
+            //p
+            //length
+        }
+
+        struct triangle
+        {
+
+        }
+
+        struct circle
+        {
+
+        }
 
         static void Main(string[] args)
         {
-            #region task 1
-            Console.WriteLine("task1\nРассчитать значение функции в заданной точке.");
-            Console.WriteLine("Введите значение x.");
-            float x = Convert.ToSingle(Console.ReadLine());
-            for (short i = 1; i < 10; i++)
-            {
-                Console.WriteLine(Funct(i, x));
-            }
-            Console.WriteLine("press for the next");
-            Console.ReadKey();
+            //#region task 1
+            //Console.WriteLine("task1\nРассчитать значение функции в заданной точке.");
+            //Console.WriteLine("Введите значение x.");
+            //float x = Convert.ToSingle(Console.ReadLine());
+            //for (short i = 1; i < 10; i++)
+            //    Console.WriteLine(Funct(i, x));
+            //Console.WriteLine("press for the next");
+            //Console.ReadKey();
+            //#endregion
+
+            //#region task 2
+            //Console.WriteLine("task2\nИспользовать перечислимый тип для хранения названий музыкальных жанров с последующей печатью на экране значений созданного перечислимого типа.");
+            //for (short i = 0; i < 20; i++)
+            //    Console.WriteLine("{0}\t{1}", i, (music_ganre)i);
+            //Console.WriteLine("\npress for the next");
+            //Console.ReadKey();
+            //#endregion
+
+            #region task 2
+
             #endregion
-
-
-
-
         }
     }
 }
