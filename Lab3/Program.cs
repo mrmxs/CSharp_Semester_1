@@ -199,7 +199,7 @@ namespace Lab3
 
         private static int Factorial(int n, string v)
         {
-            switch (v)
+            switch (v.ToUpper())
             {
                 case "FOR":
                     return FactorialByFOR(n);
