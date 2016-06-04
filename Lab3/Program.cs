@@ -187,14 +187,59 @@ namespace Lab3
         }
         #endregion
 
-            static void Main(string[] args)
+        #region Code for Task 3 here
+        static void Task3()
+        {
+            Console.WriteLine("== Программа, которая рассчитывает факториал числа ==\nВведите число.");
+            int n = ReadInt32inBoards(1, 10);
+            Console.WriteLine("Выберите цикл, с помощью которого будет рассчитан факториал. FOR/DO/WHILE");
+            Console.WriteLine("{0}! = {1}", n, Factorial(n, Console.ReadLine()));
+            Console.ReadKey();
+        }
+
+        private static int Factorial(int n, string v)
+        {
+            switch (v)
+            {
+                case "FOR":
+                    return FactorialByFOR(n);
+                case "DO":
+                    return FactorialByDO(n);
+                case "WHILE":
+                    return FactorialByWHILE(n);
+                default:
+                    goto case "FOR";
+            }
+        }
+
+        private static int FactorialByFOR(int n)
+        {
+            int result = 1;
+
+            for (int i = 1; i <= n; i++) result *= i;
+
+            return result;
+        }
+
+        private static int FactorialByDO(int n)
+        {
+            throw new NotImplementedException();
+        }
+
+        private static int FactorialByWHILE(int n)
+        {
+            throw new NotImplementedException();
+        }
+        #endregion
+
+        static void Main(string[] args)
         {
             /// 1. Разработать консольное приложение,
             /// позволяющее одному пользователю загадывать число
             /// в заданном диапазоне, а другому отгадывать это число, 
             /// вводя произвольные числа с последующим указанием того, 
             /// больше это число загаданного или нет.
-            Task1();
+            //Task1();
 
             /// 2. Разработать приложение, определяющее дату 
             /// в формате «число месяц» по номеру дня в году, 
@@ -205,7 +250,24 @@ namespace Lab3
             /// Предусмотреть проверку номера дня в году на попадание
             /// в диапазон от 1 до 365 или от 1 до 366 для високосных годов.
             /// Результат выводить на консоль.
-            Task2();
+            //Task2();
+
+            /// 3. Разработать консольное приложение, осуществляющее 
+            /// расчёт значения функции в заданной точке. 
+            /// Аргумент функции задаётся с консоли,
+            /// результат также должен выводиться на консоль. 
+            /// Использовать функции, предусматривающие вычисления 
+            /// суммы ряда или использования рекуррентных формул.
+            /// В задании можно явно указать, какой вид цикла следует использовать. 
+            /// FOR
+            /// n! = (n-1)!*n, 1! = 1
+            /// DO
+            /// a0=0, a1=1, a(n+2)=a(n+1)+a(n)
+            /// WHILE
+            /// a(n) = sqrt(  2*r^2 - 2*R*sqrt( R^2 - a(n-1)^2/4 )  ),
+            ///     n>=2, 
+            ///     R - радиус окружности
+            Task3();
 
         }
     }
