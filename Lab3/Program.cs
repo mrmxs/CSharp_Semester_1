@@ -236,7 +236,14 @@ namespace Lab3
 
         private static int FactorialByWHILE(int n)
         {
-            throw new NotImplementedException();
+            int result = 1;
+
+            while (n > 0)
+            {
+                result *= n--;
+            }
+            
+            return result;
         }
         #endregion
 
