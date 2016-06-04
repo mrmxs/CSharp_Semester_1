@@ -223,7 +223,15 @@ namespace Lab3
 
         private static int FactorialByDO(int n)
         {
-            throw new NotImplementedException();
+            int result = 1;
+
+            do
+            {
+                result *= n--;
+            }
+            while (n > 0);
+
+            return result;
         }
 
         private static int FactorialByWHILE(int n)
