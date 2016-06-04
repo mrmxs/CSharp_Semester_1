@@ -29,7 +29,7 @@ namespace Lab3
                 }
 
                 if (intToReturn < minBoard | intToReturn > maxBoard)
-                    Console.WriteLine("Нужно число от -{0} до {1}", minBoard, maxBoard);
+                    Console.WriteLine("Нужно число от {0} до {1}", minBoard, maxBoard);
 
             } while (!Int32.TryParse(input, out intToReturn) || 
                      (intToReturn < minBoard | intToReturn > maxBoard));
@@ -157,7 +157,7 @@ namespace Lab3
 
             public static /*void*/ int[] DateOfDay()
             {
-                int d = YEAR.day;
+                int d = day;
                 int m = 1;
                 do
                 {
