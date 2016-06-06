@@ -6,3 +6,10 @@
 4. перейти обратно в мастер
 
 то 1.txt будет в мастере измененный - такой, как он был после шага 2 в ветке b1
+
+
+____________________
+This text was added from the branch "b1"
+_________
+This text one string upper was not commited. 
+And now this is "master" here. And file is modified like in "b1".
